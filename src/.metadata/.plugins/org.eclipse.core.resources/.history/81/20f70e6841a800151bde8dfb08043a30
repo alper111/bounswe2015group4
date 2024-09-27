@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class tagcl {
+	String tag;
+	static Map<Integer,Integer> hasIt;
+	tagcl(String a)
+	{	tag=a;
+		hasIt= new HashMap<Integer, Integer>();
+	}
+	public static void person(int p)
+	{	int b=1;
+		if(hasIt.containsKey(p))
+		{	b=hasIt.get(p);
+			b+=1;
+		}
+		hasIt.put(p, b);
+	}
+}

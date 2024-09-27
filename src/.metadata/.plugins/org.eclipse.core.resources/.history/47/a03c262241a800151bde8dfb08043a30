@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class tagcl {
+	String tag;
+	Map<Integer,Integer> hasIt;
+	tagcl(String a)
+	{	tag=a;
+		hasIt= new HashMap<Integer, Integer>();
+	}
+	public static void person()
+	{	if(hasIt.ContainsKey())
+			;
+	}
+}

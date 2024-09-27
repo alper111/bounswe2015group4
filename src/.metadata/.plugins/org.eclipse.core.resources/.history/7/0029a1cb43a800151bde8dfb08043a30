@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class main {
+	static Map<String,tagcl> alltags;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		alltags= new HashMap<String,tagcl>();
+	}
+	public static void newtag(int person,String tag)
+	{	tagcl cltag;
+		if(alltags.containsKey(tag))
+			cltag=alltags.get(tag);
+		else
+			cltag=new tagcl(tag);
+		cltag.person(person);
+		alltags.put(tag, cltag);
+	}
+}
